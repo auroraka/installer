@@ -25,7 +25,7 @@ require() {
 
 # install from auroraka/installer
 install() {
-  ~/.ytl/lib/installer/$1/ubuntu_install.sh
+  ~/.ytl/lib/installer/$1/install_ubuntu.sh
 }
 
 ## [END] func tools
@@ -38,6 +38,7 @@ if [[ -f ~/.bash_profile ]];then mv ~/.bash_profile ~/.bash_profile.bak;fi
 git init
 git remote add origin git@github.com:auroraka/dotfiles.git
 git fetch --all
+git submodule update --init
 git checkout origin/master -- .gitignore
 git reset --hard origin/master
 chmod 400 ~/.ssh/config
