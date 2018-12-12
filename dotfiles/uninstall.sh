@@ -2,6 +2,6 @@
 
 echo "Remove config of dotfiles!!!"
 
-rm -rfi ~/.zsh*
-rm -rfi ~/.ytl
-rm -rfi ~/.git*
+rm -rfv ~/.zsh*
+rm -rfv ~/.ytl
+rm -rfv ~/.git*
