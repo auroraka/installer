@@ -62,4 +62,8 @@ install pyenv
 # [install trash]
 require trash-cli
 
+# [install peco]
+arch=$(dpkg --print-architecture)
+sudo cp ~/.ytl/lib/peco/peco_linux_${arch}/peco /usr/local/bin
+
 exec zsh
