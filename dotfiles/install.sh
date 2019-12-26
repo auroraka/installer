@@ -54,7 +54,7 @@ cd ~/.oh-my-zsh/custom/ && tar xvzf plugins.tar && cd ~
 
 # [install vim plugin]
 require vim
-cd ~/.vim && tar xvf ~/.vim/bundle.tar && cd ~
+vim +PluginInstall +qall
 
 # [install pyenv & pyenv-virtualenv]
 install pyenv
