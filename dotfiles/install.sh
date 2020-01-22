@@ -18,8 +18,8 @@ command_exists () {
 # install from system package manager
 require() { 
   if command_not_exists $1;then
-    echo "sudo apt install $1"
-    sudo apt install $1
+    echo "sudo apt install $1 -y"
+    sudo apt install $1 -y
   fi  
 }
 
@@ -54,6 +54,7 @@ cd ~/.oh-my-zsh/custom/ && tar xvzf plugins.tar && cd ~
 
 # [install vim plugin]
 require vim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 
 # [install pyenv & pyenv-virtualenv]
