@@ -38,8 +38,8 @@ if [[ -f ~/.bash_profile ]];then mv ~/.bash_profile ~/.bash_profile.bak;fi
 git init
 git remote add origin git@github.com:auroraka/dotfiles.git
 git fetch --all
-git checkout origin/master -- .gitignore
-git reset --hard origin/master
+git checkout origin/main -- .gitignore
+git reset --hard origin/main
 git submodule update --init
 chmod 400 ~/.ssh/config
 
@@ -47,7 +47,7 @@ chmod 400 ~/.ssh/config
 require zsh
 require wget
 install oh-my-zsh
-git checkout origin/master -- .zshrc
+git checkout origin/main -- .zshrc
 ln -s -t ~/.oh-my-zsh/themes/ ~/.ytl/etc/oh-my-zsh/auroraka.zsh-theme
 cp ~/.ytl/etc/oh-my-zsh/plugins.tar ~/.oh-my-zsh/custom/
 cd ~/.oh-my-zsh/custom/ && tar xvzf plugins.tar && cd ~
